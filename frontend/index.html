@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Donation Tracker</h1>
+      <button id="connectButton">Connect to MetaMask</button>
+
+      <div id="donationSection">
+        <h2>Make a Donation</h2>
+        <input type="text" id="cause" placeholder="Enter Cause Name" />
+        <input
+          type="number"
+          id="donationAmount"
+          placeholder="Amount to Donate (ETH)"
+        />
+        <button id="donateButton">Donate</button>
+      </div>
+
+      <div id="viewTotalSection">
+        <h2>View Total Donations for a Cause</h2>
+        <input type="text" id="viewCause" placeholder="Enter Cause Name" />
+        <button id="viewTotalButton">View Total Donations</button>
+        <p id="totalDonationsDisplay"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
